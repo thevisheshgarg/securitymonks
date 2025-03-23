@@ -11,39 +11,52 @@ const inter = Inter({
 
 // Metadata configuration
 export const metadata: Metadata = {
+  metadataBase: new URL('https://securitymonks.in'),
   title: "Security Monks - Leading Cybersecurity Solutions Provider",
   description: "Security Monks provides cutting-edge cybersecurity solutions, including 24/7 monitoring, threat detection, and data protection services. Protect your business with industry-leading security experts.",
   keywords: "cybersecurity, security solutions, data protection, threat detection, security monitoring, IT security, penetration testing, security assessment, compliance services",
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   alternates: {
     canonical: 'https://securitymonks.in',
   },
   openGraph: {
-    title: "Security Monks - Leading Cybersecurity Solutions Provider",
-    description: "Protect your business with industry-leading cybersecurity solutions from Security Monks.",
-    url: "https://securitymonks.in",
-    siteName: "Security Monks",
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://securitymonks.in',
+    siteName: 'Security Monks',
+    title: 'Security Monks - Leading Cybersecurity Solutions Provider',
+    description: 'Protect your business with industry-leading cybersecurity solutions from Security Monks.',
     images: [
       {
-        url: "/SecurityMonks.png",
+        url: '/SecurityMonks.png',
         width: 800,
         height: 600,
-        alt: "Security Monks Logo",
+        alt: 'Security Monks Logo',
       },
     ],
-    locale: "en_US",
-    type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Security Monks - Leading Cybersecurity Solutions Provider",
-    description: "Protect your business with industry-leading cybersecurity solutions from Security Monks.",
-    images: ["/SecurityMonks.png"],
+    card: 'summary_large_image',
+    title: 'Security Monks - Leading Cybersecurity Solutions Provider',
+    description: 'Protect your business with industry-leading cybersecurity solutions from Security Monks.',
+    images: ['/SecurityMonks.png'],
+    creator: '@securitymonks',
   },
-};
+  verification: {
+    google: 'add-your-verification-code',
+    yandex: 'add-your-verification-code',
+  },
+}
 
 export default function RootLayout({
   children,
@@ -76,4 +89,5 @@ export default function RootLayout({
     </html>
   );
 }
+
 

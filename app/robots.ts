@@ -1,15 +1,12 @@
-import { NextResponse } from "next/server";
+import { MetadataRoute } from 'next'
 
-export async function GET() {
-  const robots = `
-    User-agent: *
-    Allow: /
-    Sitemap: https://securitymonks.in/sitemap.xml
-  `;
-
-  return new NextResponse(robots, {
-    headers: {
-      "Content-Type": "text/plain",
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: {
+      userAgent: '*',
+      allow: '/',
+      disallow: ['/private/', '/admin/'],
     },
-  });
+    sitemap: 'https://securitymonks.in/sitemap.xml',
+  }
 }

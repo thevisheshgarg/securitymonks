@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Inter } from 'next/font/google'
 import "@/styles/globals.css"
 
@@ -85,6 +87,8 @@ export default function RootLayout({
       </head>
       <body className="font-sans overflow-x-hidden">
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

@@ -116,7 +116,7 @@ export default function Hero() {
                                 </span>
                             </h1>
                             <p className="text-lg sm:text-xl text-white max-w-2xl" itemProp="description">
-                            In a world where threats never sleep, we bring clarity, discipline, and foresight to your defenses. At Security Monks, we don't wait for breaches — we prevent them. Our forward defense strategy blends continuous offensive testing with real-world attacker mindset, helping you protect what matters before it's too late.                            
+                            In a world where threats never sleep, we bring clarity, discipline, and foresight to your defenses. At Security Monks, we don&apos;t wait for breaches — we prevent them. Our forward defense strategy blends continuous offensive testing with real-world attacker mindset, helping you protect what matters before it&apos;s too late.                            
                             </p>
                         </motion.div>
 

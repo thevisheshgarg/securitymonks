@@ -126,7 +126,7 @@ export default function EnquiryForm() {
   };
 
   const inputBaseClasses = `
-    w-full px-4 py-3 rounded-xl border bg-white/5 backdrop-blur-sm
+    w-full px-4 py-3 rounded-xl border bg-white/5
     transition-all duration-200 placeholder:text-gray-400 text-white
     focus:outline-none focus:ring-2 focus:bg-white/10
     pl-11

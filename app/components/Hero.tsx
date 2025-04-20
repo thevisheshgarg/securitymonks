@@ -21,14 +21,14 @@ export default function Hero() {
         }
     };
 
-    const logoVariants = {
-        hidden: { opacity: 0, scale: 0.8 },
-        visible: {
-            opacity: 1,
-            scale: 1,
-            transition: { duration: 0.5 }
-        }
-    };
+    // const logoVariants = {
+    //     hidden: { opacity: 0, scale: 0.8 },
+    //     visible: {
+    //         opacity: 1,
+    //         scale: 1,
+    //         transition: { duration: 0.5 }
+    //     }
+    // };
 
     const contentVariants = {
         hidden: { opacity: 0 },
@@ -55,14 +55,14 @@ export default function Hero() {
         }
     };
 
-    const itemVariants = {
-        hidden: { opacity: 0, x: -20 },
-        visible: (index: number) => ({
-            opacity: 1,
-            x: 0,
-            transition: { duration: 0.5, delay: 0.8 + index * 0.1 }
-        })
-    };
+    // const itemVariants = {
+    //     hidden: { opacity: 0, x: -20 },
+    //     visible: (index: number) => ({
+    //         opacity: 1,
+    //         x: 0,
+    //         transition: { duration: 0.5, delay: 0.8 + index * 0.1 }
+    //     })
+    // };
 
     return (
         <section

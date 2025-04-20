@@ -163,7 +163,7 @@ export default function ServicesSection() {
             });
           }
         }
-      }, 20);
+      }, 15);
     };
 
     // Start scrolling if conditions permit

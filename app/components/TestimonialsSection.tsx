@@ -14,19 +14,19 @@ const testimonials: TestimonialProps[] = [
         name: "John Smith",
         role: "CTO",
         company: "Fintech Company",
-        content: "Working with this team has been transformative for our business. Their expertise in web development and attention to detail is unmatched."
-    },
-    {
-        name: "Sarah Johnson",
-        role: "VP of Engineering",
-        company: "Ecommerce D2C",
-        content: "The level of professionalism and technical skill demonstrated by the team is exceptional. They delivered beyond our expectations."
+        content: "Security Monks doesn't just find vulnerabilities — they understand how those risks translate to our business. Their team worked like an extension of ours, constantly collaborating and adapting to our fast-paced dev cycles. In fintech, trust is everything — and with Security Monks, we're ahead of threats, not reacting to them."
     },
     {
         name: "Michael Chen",
         role: "Director of Technology",
         company: "Health Tech",
-        content: "Their innovative approach to problem-solving and commitment to quality made our project a huge success. Highly recommended!"
+        content: "Working with Security Monks has been a game-changer for us. In the health sector, where protecting patient data is critical, compliance with HIPAA is paramount. Security Monks not only helped us identify vulnerabilities but also ensured that our systems were aligned with HIPAA standards. Their approach was thorough and tailored to the unique needs of healthcare technology, giving us the confidence that our data is secure and our compliance is intact."
+    },
+    {
+        name: "Sarah Johnson",
+        role: "VP of Engineering",
+        company: "Ecommerce D2C",
+        content: "Working with Security Monks honestly felt like adding a few senior folks to our own team. They didn't just run scans and send a report — they understood how our product works, how our engineers build, and gave us feedback that actually made sense in our world. Super easy to work with, super sharp, and genuinely helpful."
     }
 ];
 

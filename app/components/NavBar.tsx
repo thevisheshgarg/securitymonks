@@ -84,7 +84,7 @@ const NavBar: React.FC = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
+          <div className="hidden lg:flex items-center space-x-1">
             {navItems.map((item) => (
               <a
                 key={item.label}
@@ -101,7 +101,7 @@ const NavBar: React.FC = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={toggleMenu}
               className="p-2 rounded-md text-gray-300 hover:text-white hover:bg-secondary-700 focus:outline-none"
@@ -114,7 +114,7 @@ const NavBar: React.FC = () => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden bg-secondary-800 border-t border-gray-700 shadow-lg">
+        <div className="lg:hidden bg-secondary-800 border-t border-gray-700 shadow-lg">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.map((item) => (
               <a

@@ -66,7 +66,7 @@ export default function Hero() {
 
     return (
         <section
-            className="relative w-full min-h-[80vh] bg-black py-8 md:py-0 overflow-hidden"
+            className="py-8 px-4 md:px-8 lg:px-16 bg-black"
             aria-label="Hero section"
             itemScope
             itemType="https://schema.org/Service"
@@ -74,7 +74,7 @@ export default function Hero() {
             <ParticlesBackground />
 
             {/* Main Container */}
-            <div className="container mx-auto px-4 md:px-4 h-full flex items-center justify-center py-12 md:py-20 relative">
+            <div className="max-w-7xl mx-auto h-full flex items-center justify-center py-12 md:py-20 relative">
                 {/* Content Section - Text-center on mobile, left-aligned on lg screens */}
                 <div className="w-full flex flex-col lg:flex-row items-center lg:items-start justify-between">
                     <motion.div
@@ -109,6 +109,7 @@ export default function Hero() {
                                 <span className="sr-only">Security Monks - </span>
                                 <span className="inline-block">
                                     Secure like a
+                                    <br />
                                     <span className="relative whitespace-nowrap">
                                         <span className="relative z-10 text-primary-500 text-6xl md:text-8xl"> Monk</span>
                                     </span>
@@ -177,5 +178,6 @@ export default function Hero() {
         </section>
     );
 }
+
 
 

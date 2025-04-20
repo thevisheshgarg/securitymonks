@@ -158,7 +158,7 @@ export default function ServicesSection() {
           } else {
             // Smooth scroll movement
             scrollRef.current.scrollBy({
-              left: 1,
+              left: 5,
               behavior: 'auto'
             });
           }

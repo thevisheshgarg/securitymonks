@@ -83,14 +83,14 @@ export default function Hero() {
                         variants={containerVariants}
                         className="w-full lg:w-3/4 flex flex-col items-center lg:items-start space-y-8 pt-4 md:pt-0 text-center lg:text-left"
                     >
-                        {/* Logo with enhanced glow */}
+                        {/* Logo with enhanced glow
                         <motion.div
                             variants={logoVariants}
                             className="w-32 md:w-36 lg:w-44 relative"
                         >
                             <div className="absolute -inset-2 bg-primary-500/20 blur-xl rounded-full animate-pulse" aria-hidden="true" />
                             <Image
-                                src="/SecurityMonks.png"
+                                src="/testLogo3.png"
                                 alt="Security Monks Logo"
                                 width={144}
                                 height={36}
@@ -98,68 +98,58 @@ export default function Hero() {
                                 priority
                                 itemProp="image"
                             />
-                        </motion.div>
+                        </motion.div> */}
 
                         {/* Main Content */}
                         <motion.div
                             variants={contentVariants}
-                            className="space-y-6"
+                            className="space-y-6 mt-8 md:mt-16"
                         >
-                            <h1 className="text-3xl md:text-4xl font-bold leading-tight text-white tracking-tight" itemProp="name">
+                            <h1 className="text-5xl md:text-6xl font-bold leading-tight text-white tracking-tight font-orbitron" itemProp="name">
                                 <span className="sr-only">Security Monks - </span>
                                 <span className="inline-block">
                                     Secure like a
                                     <span className="relative whitespace-nowrap">
-                                        <span className="relative z-10 text-primary-500"> Monk</span>
+                                        <span className="relative z-10 text-primary-500 text-6xl md:text-8xl"> Monk</span>
                                     </span>
                                 </span>
                             </h1>
                             <p className="text-lg sm:text-xl text-white max-w-2xl" itemProp="description">
-                                Elite cybersecurity solutions engineered to defend against advanced threats.
-                                Protecting your assets with military-grade security protocols.
+                            Elite cybersecurity solutions expertly crafted to defend against sophisticated and ever-evolving digital threats. We protect your critical data, infrastructure, and assets using military-grade encryption, intelligent threat detection, and proactive defense mechanisms. Our advanced security protocols ensure your systems remain secure, resilient, and ready to withstand any cyberattack.
                             </p>
                         </motion.div>
 
                         {/* Features List */}
-                        <motion.ul
+                        <motion.div
                             variants={listVariants}
-                            className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-2xl"
-                            aria-label="Key features"
-                            itemProp="itemListElement"
-                            itemScope
-                            itemType="https://schema.org/ItemList"
+                            className="w-full flex justify-center lg:justify-start"
                         >
-                            {[
-                                'Advanced Threat Detection',
-                                'Zero-Day Attack Prevention',
-                                'AI-Powered Security',
-                                'Quantum-Ready Encryption'
-                            ].map((feature, index) => (
-                                <motion.li
-                                    key={index}
-                                    custom={index}
-                                    variants={itemVariants}
-                                    className="flex items-center space-x-3 group justify-center lg:justify-start 
-                                             bg-secondary-800/50 backdrop-blur-sm p-3 rounded-lg
-                                             border border-secondary-700/50 hover:border-primary-500/50
-                                             transition-all duration-300"
-                                    itemScope
-                                    itemType="https://schema.org/ListItem"
-                                    itemProp="itemListElement"
+                            <a 
+                                href="#contact"
+                                className="inline-flex items-center py-4 text-lg font-semibold 
+                                border lg:border-0 border-primary-400/30 px-8 lg:px-0
+                                text-primary-500 rounded-lg hover:text-primary-600 
+                                bg-black/20 lg:bg-transparent
+                                hover:bg-black/60 lg:hover:bg-transparent
+                                transition-all duration-300 justify-start"
+
+                            >
+                                Get Started
+                                <svg 
+                                    className="ml-2 -mr-1 w-5 h-5" 
+                                    fill="none" 
+                                    stroke="currentColor" 
+                                    viewBox="0 0 24 24"
                                 >
-                                    <span
-                                        className="w-2 h-2 bg-primary-500 rounded-full group-hover:scale-125 transition-transform duration-300"
-                                        aria-hidden="true"
+                                    <path 
+                                        strokeLinecap="round" 
+                                        strokeLinejoin="round" 
+                                        strokeWidth="2" 
+                                        d="M13 7l5 5m0 0l-5 5m5-5H6"
                                     />
-                                    <span
-                                        className="text-base sm:text-lg text-white font-medium group-hover:text-primary-400 transition-colors duration-300"
-                                        itemProp="name"
-                                    >
-                                        {feature}
-                                    </span>
-                                </motion.li>
-                            ))}
-                        </motion.ul>
+                                </svg>
+                            </a>
+                        </motion.div>
                     </motion.div>
 
                     {/* Right side SVG - Only visible on lg screens and up */}
@@ -187,3 +177,5 @@ export default function Hero() {
         </section>
     );
 }
+
+

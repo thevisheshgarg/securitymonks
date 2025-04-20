@@ -12,20 +12,20 @@ interface TestimonialProps {
 const testimonials: TestimonialProps[] = [
     {
         name: "John Smith",
-        role: "CEO",
-        company: "Tech Solutions Inc.",
+        role: "CTO",
+        company: "Fintech Company",
         content: "Working with this team has been transformative for our business. Their expertise in web development and attention to detail is unmatched."
     },
     {
         name: "Sarah Johnson",
-        role: "Marketing Director",
-        company: "Digital Innovations",
+        role: "VP of Engineering",
+        company: "Ecommerce D2C",
         content: "The level of professionalism and technical skill demonstrated by the team is exceptional. They delivered beyond our expectations."
     },
     {
         name: "Michael Chen",
-        role: "Product Manager",
-        company: "StartUp Labs",
+        role: "Director of Technology",
+        company: "Health Tech",
         content: "Their innovative approach to problem-solving and commitment to quality made our project a huge success. Highly recommended!"
     }
 ];
@@ -71,10 +71,13 @@ export default function TestimonialsSection() {
                             </p>
                             <div className="border-t border-gray-700 pt-4">
                                 <p className="text-white font-semibold">
-                                    {testimonial.name}
+                                    {/* {testimonial.name} */}
                                 </p>
                                 <p className="text-primary-500">
-                                    {testimonial.role} at {testimonial.company}
+                                    {testimonial.role} 
+                                    <span className="text-white"> @ </span>
+                
+                                    {testimonial.company}
                                 </p>
                             </div>
                         </motion.div>

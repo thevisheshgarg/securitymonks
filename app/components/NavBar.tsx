@@ -3,6 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 interface NavItem {
   label: string;
@@ -58,9 +60,25 @@ const NavBar: React.FC = () => {
           {/* Logo/Brand */}
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center space-x-2">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                className="w-8 md:w-10 relative"
+              >
+                <div className="absolute -inset-2 bg-primary-500/20 blur-xl rounded-full animate-pulse" aria-hidden="true" />
+                <Image
+                  src="/SecurityMonks.png"
+                  alt="Security Monks Logo"
+                  width={40}
+                  height={40}
+                  className="w-full h-auto relative"
+                  priority
+                />
+              </motion.div>
               <span className="text-2xl font-bold tracking-tight">
-                <span className="text-primary-500">Security</span>
-                <span className="text-white">Monks</span>
+                <span className="text-white">Security</span>
+                <span className="text-primary-500">Monks</span>
               </span>
             </Link>
           </div>

@@ -1,6 +1,6 @@
 'use client';
 
-import { FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+import { FaXTwitter, FaLinkedinIn } from 'react-icons/fa6';
 import { useCallback, useEffect, useState } from 'react';
 import { Particles } from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
@@ -98,7 +98,7 @@ const Footer = () => {
             
             <div className="flex gap-4">
               {[
-                { name: 'Twitter', url: 'https://twitter.com', icon: <FaTwitter size={18} /> },
+                { name: 'X', url: 'https://twitter.com', icon: <FaXTwitter size={18} /> },
                 { name: 'LinkedIn', url: 'https://linkedin.com/company/the-security-monks/', icon: <FaLinkedinIn size={18} /> }
               ].map((social) => (
                 <a
@@ -128,9 +128,9 @@ const Footer = () => {
                 <p className="hover:text-primary-400 transition-colors duration-300">
                   <a href="mailto:knock@securitymonks.in">knock@securitymonks.in</a>
                 </p>
-                <p className="hover:text-primary-400 transition-colors duration-300">
+                {/* <p className="hover:text-primary-400 transition-colors duration-300">
                   <a href="tel:+919587752466">(+91) 95877 52466</a>
-                </p>
+                </p> */}
                 <p>213, Optus Corporate Suites, Bhiwadi, Rajasthan, India</p>
               </div>
             </div>

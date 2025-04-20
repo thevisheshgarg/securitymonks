@@ -12,8 +12,8 @@ const services = [
     heading: 'Application Security Assessments',
     description: 'Comprehensive evaluations to identify vulnerabilities, enhance security posture, and safeguard applications against evolving cyber threats.',
     category: 'Assessment',
-    bgClass: 'bg-gradient-to-br from-orange-100 via-amber-200 to-orange-200',
-    textColor: 'text-black'
+    bgClass: 'bg-gradient-to-br from-orange-500 via-indigo-600 to-blue-700 hover:from-blue-700 hover:via-indigo-600 hover:to-orange-500 transition-all duration-500',
+    textColor: 'text-white'
   },
   {
     id: 2,
@@ -21,8 +21,8 @@ const services = [
     heading: 'Compliance & Regulatory Consulting',
     description: 'Expert guidance to navigate complex regulations, ensuring seamless compliance with GDPR, HIPAA, ISO 27001, and industry standards.',
     category: 'Consulting',
-    bgClass: 'bg-gradient-to-br from-blue-200 via-indigo-200 to-purple-200',
-    textColor: 'text-black'
+    bgClass: 'bg-gradient-to-br from-purple-700 via-blue-800 to-cyan-500 hover:from-cyan-500 hover:via-blue-800 hover:to-purple-700 transition-all duration-500',
+    textColor: 'text-white'
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const services = [
     heading: 'Resource Augmentation',
     description: 'Flexible staffing solutions providing top-tier cybersecurity professionals to meet project demands without the overhead of full-time hires.',
     category: 'Services',
-    bgClass: 'bg-gradient-to-br from-green-800 via-emerald-800 to-teal-800',
+    bgClass: 'bg-gradient-to-br from-orange-500 via-purple-600 to-blue-600 hover:from-blue-600 hover:via-purple-600 hover:to-orange-500 transition-all duration-500',
     textColor: 'text-white'
   },
   {
@@ -39,7 +39,7 @@ const services = [
     heading: 'Security Awareness Training',
     description: 'Customized training programs to educate employees on emerging threats, phishing attacks, and best practices for risk mitigation.',
     category: 'Training',
-    bgClass: 'bg-gradient-to-br from-purple-900 to-indigo-900',
+    bgClass: 'bg-gradient-to-br from-pink-600 via-purple-700 to-indigo-800 hover:from-indigo-800 hover:via-purple-700 hover:to-pink-600 transition-all duration-500',
     textColor: 'text-white'
   },
   {
@@ -48,8 +48,8 @@ const services = [
     heading: 'Approved Scanning Vendors (ASV) Services',
     description: 'Certified PCI-compliant scanning to detect vulnerabilities, ensure compliance, and strengthen security against external threats.',
     category: 'Assessment',
-    bgClass: 'bg-gradient-to-br from-cyan-200 via-sky-300 to-blue-200',
-    textColor: 'text-black'
+    bgClass: 'bg-gradient-to-br from-purple-600 via-blue-700 to-cyan-600 hover:from-cyan-600 hover:via-blue-700 hover:to-purple-600 transition-all duration-500',
+    textColor: 'text-white'
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const services = [
     heading: 'Cloud Security Review',
     description: 'Thorough security assessments to identify misconfigurations, enforce best practices, and fortify cloud environments against breaches.',
     category: 'Assessment',
-    bgClass: 'bg-gradient-to-br from-pink-800 via-rose-700 to-red-800',
+    bgClass: 'bg-gradient-to-br from-red-600 via-purple-700 to-blue-800 hover:from-blue-800 hover:via-purple-700 hover:to-red-600 transition-all duration-500',
     textColor: 'text-white'
   },
   {
@@ -66,7 +66,7 @@ const services = [
     heading: 'Vulnerability Assessment & Penetration Testing (VAPT)',
     description: 'Rigorous security evaluations combining automated scans and manual testing to uncover and remediate vulnerabilities effectively.',
     category: 'Testing',
-    bgClass: 'bg-gradient-to-br from-violet-800 via-purple-700 to-fuchsia-800',
+    bgClass: 'bg-gradient-to-br from-orange-500 via-fuchsia-600 to-indigo-700 hover:from-indigo-700 hover:via-fuchsia-600 hover:to-orange-500 transition-all duration-500',
     textColor: 'text-white'
   },
   {
@@ -75,7 +75,7 @@ const services = [
     heading: 'Red Teaming Assessment',
     description: 'Simulated real-world attacks to test defenses, expose security gaps, and enhance incident response capabilities.',
     category: 'Testing',
-    bgClass: 'bg-gradient-to-br from-red-700 via-rose-600 to-pink-700',
+    bgClass: 'bg-gradient-to-br from-red-700 via-purple-600 to-blue-700 hover:from-blue-700 hover:via-purple-600 hover:to-red-700 transition-all duration-500',
     textColor: 'text-white'
   },
   {
@@ -84,12 +84,10 @@ const services = [
     heading: 'Threat Intelligence Services',
     description: 'Proactive threat detection and analysis to provide actionable insights, helping organizations mitigate risks before they escalate.',
     category: 'Services',
-    bgClass: 'bg-gradient-to-br from-slate-800 via-gray-700 to-zinc-800',
+    bgClass: 'bg-gradient-to-br from-orange-700 via-purple-800 to-blue-900 hover:from-blue-900 hover:via-purple-800 hover:to-orange-700 transition-all duration-500',
     textColor: 'text-white'
   }
 ];
-
-
 
 export default function ServicesSection() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);

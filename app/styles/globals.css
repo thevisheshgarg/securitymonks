@@ -28,4 +28,10 @@
   --color-secondary-900: #080809;
 }
 
+body {
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; /* For iOS smooth scrolling */
+  overscroll-behavior: none; /* Modern browsers */
+}
 

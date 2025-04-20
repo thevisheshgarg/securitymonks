@@ -1,13 +1,19 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Inter } from 'next/font/google'
+import { Inter, Orbitron } from 'next/font/google'
 import "@/styles/globals.css"
 
 // Font configuration
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
+  display: 'swap',
+})
+
+const orbitron = Orbitron({
+  subsets: ['latin'],
+  variable: '--font-orbitron',
   display: 'swap',
 })
 
@@ -66,7 +72,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable}`}>
+    <html lang="en" className={`${inter.variable} ${orbitron.variable}`}>
       <head>
         <script
           type="application/ld+json"
@@ -93,5 +99,8 @@ export default function RootLayout({
     </html>
   );
 }
+
+
+
 
 

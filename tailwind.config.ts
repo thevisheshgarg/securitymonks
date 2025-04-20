@@ -37,6 +37,7 @@ export default {
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        orbitron: ['var(--font-orbitron)', 'system-ui', 'sans-serif'],
       },
       fontSize: {
         '3xl': ['1.875rem', { lineHeight: '2.25rem' }],
@@ -52,3 +53,4 @@ export default {
     typography,
   ],
 } satisfies Config;
+

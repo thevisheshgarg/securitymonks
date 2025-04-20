@@ -29,18 +29,19 @@ const features = [
     variant: "stats"
   },
   {
-    category: "Clarity, Not Complexity",
-    question: "72% of security reports go unread by dev teams.",
-    answer: "We make sure yours isn't one of them. Our findings are prioritized, actionable, and written for real humans — not just compliance checklists.",
-    image: "/images/whyUs2.jpeg",
-    size: "col-span-full md:col-span-1"
-  },
-  {
     category: "Always-On Offense",
     question: "Point-in-time testing is dead.",
     answer: "Threats don't wait, and neither do we. Our continuous offensive testing adapts to your changing attack surface — in real time.",
     image: "/images/whyUs3.jpeg",
     size: "col-span-full md:col-span-1"
+  },
+  {
+    category: "Clarity, Not Complexity",
+    stats: "72%",
+    statsText: "of security reports go unread by dev teams.",
+    image: "/images/whyUs2.jpeg",
+    size: "col-span-full md:col-span-1",
+    variant: "stats"
   },
   {
     category: "Discipline Meets Curiosity",

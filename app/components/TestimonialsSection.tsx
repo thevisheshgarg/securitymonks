@@ -55,7 +55,7 @@ export default function TestimonialsSection() {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.2 }}
-                            className="bg-[#1A1A1A] p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                            className="bg-[#1A1A1A] p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full"
                         >
                             <div className="mb-4">
                                 <svg
@@ -66,17 +66,16 @@ export default function TestimonialsSection() {
                                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                                 </svg>
                             </div>
-                            <p className="text-gray-300 mb-6 italic">
+                            <p className="text-gray-300 mb-6 italic flex-grow">
                                 {testimonial.content}
                             </p>
-                            <div className="border-t border-gray-700 pt-4">
+                            <div className="border-t border-gray-700 pt-4 mt-auto">
                                 <p className="text-white font-semibold">
                                     {/* {testimonial.name} */}
                                 </p>
                                 <p className="text-primary-500">
                                     {testimonial.role} 
                                     <span className="text-white"> @ </span>
-                
                                     {testimonial.company}
                                 </p>
                             </div>

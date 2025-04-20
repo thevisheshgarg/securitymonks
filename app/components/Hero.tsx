@@ -116,7 +116,7 @@ export default function Hero() {
                                 </span>
                             </h1>
                             <p className="text-lg sm:text-xl text-white max-w-2xl" itemProp="description">
-                            Elite cybersecurity solutions expertly crafted to defend against sophisticated and ever-evolving digital threats. We protect your critical data, infrastructure, and assets using military-grade encryption, intelligent threat detection, and proactive defense mechanisms. Our advanced security protocols ensure your systems remain secure, resilient, and ready to withstand any cyberattack.
+                            In a world where threats never sleep, we bring clarity, discipline, and foresight to your defenses. At Security Monks, we don't wait for breaches — we prevent them. Our forward defense strategy blends continuous offensive testing with real-world attacker mindset, helping you protect what matters before it's too late.                            
                             </p>
                         </motion.div>
 

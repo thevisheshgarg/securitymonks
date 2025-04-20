@@ -7,56 +7,55 @@ import { useInView } from 'framer-motion';
 
 const features = [
   {
-    category: "CYBER STRATEGY",
-    question: "Design and operationalize a secure business strategy to protect value and customer trust",
-    answer: "We craft comprehensive security strategies that align with your business goals, ensuring protection without compromising operational efficiency.",
+    category: "We Don't React — We Anticipate",
+    question: "Breaches aren't inevitable. Most are predictable.",
+    answer: "Security Monks operates ahead of the curve. Our offensive testing uncovers real vulnerabilities — before they become real problems.",
     image: "/images/whyUs1.jpeg",
     size: "col-span-full md:col-span-2" // Full width on mobile, 2 cols on larger screens
   },
   {
-    category: "CYBER PROTECTION",
-    question: "Rapidly modernize security to safeguard your digital core",
-    answer: "Leverage cutting-edge security solutions that adapt to your growing business needs while maintaining robust protection.",
+    category: "Built for Builders",
+    question: "Security shouldn't slow you down. It should scale with you.",
+    answer: "We plug directly into your dev cycles, product sprints, and roadmaps — delivering security that moves as fast as you do.",
     hasImage: false,
     size: "col-span-full md:col-span-1"
   },
   {
-    category: "QUANTUM SECURITY",
-    question: "Shield your data for a quantum-safe future",
-    stats: "75%",
-    statsText: "of encryption in use today is at risk",
+    category: "Industry-Aware. Business-Aligned.",
+    stats: "60%",
+    statsText: "of breaches stem from industry-specific blind spots.",
     hasImage: false,
     size: "col-span-full md:col-span-1",
     variant: "stats"
   },
   {
-    category: "CYBER RESILIENCE",
-    question: "Ready to respond quickly to unseen security threats and new regulations?",
-    answer: "Our proactive approach and rapid response protocols ensure your business stays protected against emerging threats and evolving regulations.",
+    category: "Clarity, Not Complexity",
+    question: "72% of security reports go unread by dev teams.",
+    answer: "We make sure yours isn't one of them. Our findings are prioritized, actionable, and written for real humans — not just compliance checklists.",
     image: "/images/whyUs2.jpeg",
     size: "col-span-full md:col-span-1"
   },
   {
-    category: "CYBER-PHYSICAL SECURITY",
-    question: "Protect your operational technology and connected products confidently",
-    answer: "Secure your physical and digital assets with our comprehensive cyber-physical security solutions.",
+    category: "Always-On Offense",
+    question: "Point-in-time testing is dead.",
+    answer: "Threats don't wait, and neither do we. Our continuous offensive testing adapts to your changing attack surface — in real time.",
     image: "/images/whyUs3.jpeg",
     size: "col-span-full md:col-span-1"
   },
   {
-    category: "CYBER INDUSTRY",
-    question: "Is your cyber resilience fit for your industry?",
-    answer: "Industry-specific solutions tailored to your unique challenges and compliance requirements.",
+    category: "Discipline Meets Curiosity",
+    question: "We test with purpose. We dig with intent.",
+    answer: "Every engagement is deep, focused, and handcrafted. Our monks don't scan and forget — they investigate, simulate, and challenge.",
     hasImage: false,
     size: "col-span-full md:col-span-1"
   },
   {
-    category: "CYBERSECURITY CENTERS",
-    question: "How will you outsmart your toughest cybersecurity challenges?",
-    answer: "Our security operations centers provide 24/7 monitoring and rapid incident response to keep your business protected.",
+    category: "Your Security Partner, Not a Vendor",
+    question: "You're not buying hours. You're investing in resilience.",
+    answer: "We integrate with your team, not just your systems. Expect regular touchpoints, clear communication, and zero surprises.",
     image: "/images/whyUs4.jpeg",
     size: "col-span-full md:row-span-1 md:col-span-2"
-  }
+  },
 ];
 
 export default function WhyUs() {

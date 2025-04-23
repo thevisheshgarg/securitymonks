@@ -158,12 +158,12 @@ export default function ServicesSection() {
           } else {
             // Smooth scroll movement
             scrollRef.current.scrollBy({
-              left: 5,
+              left: scrollRef.current.offsetWidth / 3,
               behavior: 'auto'
             });
           }
         }
-      }, 15);
+      }, 1000);
     };
 
     // Start scrolling if conditions permit
